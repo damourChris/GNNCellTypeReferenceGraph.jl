@@ -1,5 +1,7 @@
 module GNNCellTypeReferenceGraph
 
-# Write your package code here.
+function __init__()
+    return include("./env.jl")
+end
 
 end

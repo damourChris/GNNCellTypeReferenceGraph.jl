@@ -41,12 +41,10 @@ function create_reference_graph(pairings::Dict{Symbol,Vector{String}}; onto="cl"
         end
         push!(required_terms, term)
         # Add the term to the pairings object
-        term_paired_nodes[term] = ref_eset_pairings[term_id]
+        term_paired_nodes[term] = pairings[term_id]
     end
 
     onto_tree = OntologyTree(base_term, required_terms; max_parent_limit=20)
-
-    populate!(onto_tree)
 
     for (_, genes) in term_paired_nodes
         add_genes!(onto_tree, genes)

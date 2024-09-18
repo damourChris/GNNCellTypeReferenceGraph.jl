@@ -9,7 +9,7 @@ using RCall
 using ExpressionData
 using OntologyLookup
 
-function __init__()
+function __init__(precompile=false)
     return include("./env.jl")
 end
 

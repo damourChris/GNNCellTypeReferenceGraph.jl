@@ -20,6 +20,10 @@ UUIDs = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
 
 [compat]
 Configurations = "0.17"
+RCall = "0.14"
+DataFrames = "1"
+CondaPkg = "0.2"
+MetaGraphs = "0.7"
 julia = "1.6.7"
 
 [extras]

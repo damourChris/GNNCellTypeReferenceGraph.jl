@@ -1,7 +1,7 @@
 name = "GNNCellTypeReferenceGraph"
 uuid = "4ca4c1c6-74a3-4c57-aa75-00a0b5a8f3e5"
 authors = ["Chris Damour"]
-version = "1.0.0"
+version = "1.0.2"
 
 [deps]
 CondaPkg = "992eb4ea-22a4-4c89-a5bb-47a3300528ab"
@@ -9,6 +9,7 @@ Configurations = "5218b696-f38b-4ac9-8b61-a12ec717816d"
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
 ExpressionData = "479be80e-0d6f-4501-bee0-9ae8a09d31d3"
 JLD2 = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
 MetaGraphs = "626554b9-1ddb-594c-aa3c-2596fe9399a5"
 OntologyLookup = "3c35c355-0acb-4572-93be-ae4d2e4cf8bf"
 OntologyTrees = "66aab7ce-4ed8-4c2b-b8f5-3ecb1547f657"
@@ -24,6 +25,9 @@ DataFrames = "1"
 MetaGraphs = "0.7"
 RCall = "0.14"
 Statistics = "1"
+JLD2 = "0.5"
+MetaGraphs = "0.7"
+RCall = "0.14"
 julia = "1.6.7"
 
 [extras]

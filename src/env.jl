@@ -17,6 +17,3 @@ else
     target_libr = joinpath(target_rhome, "lib", "libR.$(Libdl.dlext)")
 end
 set_preferences!(RCALL_UUID, "Rhome" => target_rhome, "libR" => target_libr)
-
-using Pkg
-Pkg.build()

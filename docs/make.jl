@@ -7,7 +7,7 @@ DocMeta.setdocmeta!(GNNCellTypeReferenceGraph, :DocTestSetup,
                     :(using GNNCellTypeReferenceGraph); recursive=true)
 
 Changelog.generate(Changelog.CommonMark(),
-                   "CHANGELOG.md";
+                   "../CHANGELOG.md";
                    repo="damourChris/GNNCellTypeReferenceGraph.jl")
 
 Changelog.generate(Changelog.Documenter(),                 # output type

@@ -6,5 +6,5 @@
     "features": {
         "ghcr.io/julialang/devcontainer-features/julia:1": {}
     },
-    "postCreateCommand": "julia --project=. -e 'using Pkg; Pkg.instantiate(); Pkg.Registry.add(RegistrySpec(url=\"https://github.com/damourChris/SysBioRegistry.jl\"))'"
+    "postCreateCommand": "julia --project=. -e 'using Pkg; Pkg.Registry.add(RegistrySpec(url=\"https://github.com/damourChris/SysBioRegistry.jl\"))'; Pkg.instantiate();"
 }

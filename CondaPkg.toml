@@ -2,4 +2,4 @@ channels = ["conda-forge", "bioconda"]
 
 [deps]
 r-base = "==4.3.3"
-bioconductor-biobase = ""
+bioconductor-biobase = "==2.62.0"

@@ -19,7 +19,12 @@ Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
 UUIDs = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
 
 [compat]
+ compathelper/new_version/2024-09-18-21-54-19-684-00422562443
 Statistics = "1"
+RCall = "0.14"
+DataFrames = "1"
+CondaPkg = "0.2"
+MetaGraphs = "0.7"
 julia = "1.6.7"
 
 [extras]

@@ -1,9 +1,4 @@
 # Script to setup the conda environment 
-using Pkg
-Pkg.activate(@__DIR__)
-Pkg.Registry.add(RegistrySpec(; url="https://github.com/damourChris/SysBioRegistry.jl"))
-Pkg.add(["RCall", "CondaPkg", "Preferences", "Libdl", "UUIDs"])
-
 using CondaPkg
 using Preferences
 using Libdl

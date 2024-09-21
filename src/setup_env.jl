@@ -31,6 +31,3 @@ else
     set_preferences!(RCALL_UUID, "Rhome" => target_rhome, "libR" => target_libr;
                      force=true)
 end
-
-using Pkg
-Pkg.activate(dirname(@__DIR__))

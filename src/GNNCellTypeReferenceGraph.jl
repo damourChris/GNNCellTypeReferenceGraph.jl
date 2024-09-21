@@ -7,6 +7,7 @@ using MetaGraphs
 using RCall
 
 using ExpressionData
+using OntologyLookup
 using OntologyTrees
 
 include("./env.jl")

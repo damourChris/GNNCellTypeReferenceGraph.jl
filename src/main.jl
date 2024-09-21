@@ -46,9 +46,7 @@ function create_reference_graph(pairings::Dict{Symbol,Vector{String}}; onto="cl"
 
     onto_tree = OntologyTree(base_term, required_terms; max_parent_limit=20)
 
-    for (_, genes) in term_paired_nodes
-        add_genes!(onto_tree, genes)
-    end
+    add_genes!(onto_tree, unique(vcat(values(term_paired_nodes)...)))
 
     connect_term_genes!(onto_tree, term_paired_nodes)
 

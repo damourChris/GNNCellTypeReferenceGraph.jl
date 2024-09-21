@@ -1,4 +1,7 @@
 module GNNCellTypeReferenceGraph
+
+include("./setup_env.jl")
+
 using JLD2
 using DataFrames
 using Statistics
@@ -10,7 +13,7 @@ using ExpressionData
 using OntologyLookup
 using OntologyTrees
 
-include("./env.jl")
+include("utils.jl")
 
 include("main.jl")
 export load_input, create_reference_graph

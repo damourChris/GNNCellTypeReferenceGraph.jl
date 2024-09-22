@@ -1,6 +1,7 @@
 function connect_genes!(onto_tree::OntologyTree, pairings::Dict{Symbol,Vector{String}})
     # Get the genes that are in the ontology tree
     graph = onto_tree.graph
+    genes_to_map = unique(reduce(vcat, values(pairings)))
 
     # We assume that the genes are already mapped to Ensembl IDS
     # If not exit 
@@ -8,8 +9,6 @@ function connect_genes!(onto_tree::OntologyTree, pairings::Dict{Symbol,Vector{St
     if !all([startswith(gene, "ENSG") for gene in genes_to_map])
         error("Genes are not mapped to Ensembl IDs")
     end
-
-    genes_to_map = unique(reduce(vcat, values(pairings)))
 
     @info "Mapping $(length(genes_to_map)) genes to peptides"
     gene_pep_mapping_result = get_pep_mapping(genes_to_map)

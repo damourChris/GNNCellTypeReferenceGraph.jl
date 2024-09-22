@@ -2,18 +2,18 @@ module GNNCellTypeReferenceGraph
 
 include("./setup_env.jl")
 
-using JLD2
 using DataFrames
-using Statistics
-using Random
-using MetaGraphs
-using RCall
-using Graphs
 using ExpressionData
+using Graphs
+using JLD2
+using LightXML
+using MetaGraphs
+using Random
 using OntologyLookup
 using OntologyTrees
 using ProteinMapping
-using LightXML
+using RCall
+using Statistics
 using STRINGdb
 
 include("utils.jl")

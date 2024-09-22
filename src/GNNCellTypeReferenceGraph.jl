@@ -8,10 +8,13 @@ using Statistics
 using Random
 using MetaGraphs
 using RCall
-
+using Graphs
 using ExpressionData
 using OntologyLookup
 using OntologyTrees
+using ProteinMapping
+using LightXML
+using STRINGdb
 
 include("utils.jl")
 

@@ -1,0 +1,7 @@
+channels = ["conda-forge", "bioconda"]
+
+[deps]
+bioconductor-biomart = ""
+"r-data.table" = ""
+r-base = "==4.3.3"
+"r-r.utils" = ""

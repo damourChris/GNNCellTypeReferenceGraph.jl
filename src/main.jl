@@ -95,7 +95,8 @@ function connect_genes!(onto_tree::OntologyTree, pairings::Dict{Symbol,Vector{St
 end
 
 function create_reference_graph(pairings::Dict{Symbol,Vector{String}}; onto="cl",
-                                base_term_iri="http://purl.obolibrary.org/obo/CL_0000000", connect_genes::Bool=false)::OntologyTree
+                                base_term_iri="http://purl.obolibrary.org/obo/CL_0000000",
+                                connect_genes::Bool=false)::OntologyTree
     base_term = onto_term(onto, base_term_iri)
     required_terms_ids = collect(keys(pairings))
 

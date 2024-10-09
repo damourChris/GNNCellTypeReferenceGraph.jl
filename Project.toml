@@ -1,7 +1,7 @@
 name = "GNNCellTypeReferenceGraph"
 uuid = "4ca4c1c6-74a3-4c57-aa75-00a0b5a8f3e5"
 authors = ["Chris Damour"]
-version = "1.2.1"
+version = "1.2.2"
 
 [deps]
 CondaPkg = "992eb4ea-22a4-4c89-a5bb-47a3300528ab"
